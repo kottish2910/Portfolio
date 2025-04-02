@@ -113,12 +113,12 @@ function redirectTo(url, target) {
   window.open(url, target);
 }
 function sendMail() {
-  window.open("mailto:arumugamvignesh203@gmail.com", "_blank");
+  window.open("mailto:Kottishwaran861@gmail.com", "_blank");
 }
 function downloadCV() {
   const link = document.createElement("a");
-  link.href = "assets/Vignesh_Resume.pdf"; // URL to your CV file
-  link.setAttribute("download", "Vignesh_Resume.pdf"); // Set the download attribute to the desired file name
+  link.href = "assets/Kottishwaran-Data analyst.pdf"; // URL to your CV file
+  link.setAttribute("download", "Kottishwaran-Data analyst.pdf"); // Set the download attribute to the desired file name
   link.style.display = "none"; // Hide the link element
   document.body.appendChild(link); // Append the link to the body
   link.click(); // Simulate a click on the link
