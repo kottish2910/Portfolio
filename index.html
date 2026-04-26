@@ -18,6 +18,142 @@
     <link rel="shortcut icon" href="portfolio.png" type="image/x-icon">
 
     <title>Portfolio | Kottishwaran</title>
+
+    <style>
+        /* ===== EXPERIENCE SECTION ===== */
+        .experience-timeline {
+            position: relative;
+            padding: 10px 0;
+            max-width: 860px;
+            margin: 0 auto;
+        }
+
+        /* Vertical line */
+        .experience-timeline::before {
+            content: '';
+            position: absolute;
+            left: 18px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: var(--first-color, #4f6af0);
+            border-radius: 2px;
+        }
+
+        .exp-card {
+            position: relative;
+            margin-left: 55px;
+            margin-bottom: 36px;
+            background: var(--bg-color, #f9f9f9);
+            border: 1px solid rgba(79, 106, 240, 0.15);
+            border-radius: 12px;
+            padding: 22px 26px;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
+
+        .exp-card:hover {
+            box-shadow: 0 8px 28px rgba(79, 106, 240, 0.15);
+            transform: translateY(-3px);
+        }
+
+        /* Circle dot on timeline */
+        .exp-card::before {
+            content: '';
+            position: absolute;
+            left: -44px;
+            top: 24px;
+            width: 14px;
+            height: 14px;
+            background: var(--first-color, #4f6af0);
+            border: 3px solid #fff;
+            border-radius: 50%;
+            box-shadow: 0 0 0 3px var(--first-color, #4f6af0);
+        }
+
+        .exp-role {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--first-color, #4f6af0);
+            margin: 0 0 8px 0;
+        }
+
+        .exp-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px 16px;
+            margin-bottom: 14px;
+            align-items: center;
+        }
+
+        .exp-company {
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: var(--text-color, #333);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .exp-location {
+            font-weight: 700;
+            font-size: 0.88rem;
+            color: #555;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .exp-duration {
+            font-weight: 700;
+            font-size: 0.88rem;
+            color: var(--first-color, #4f6af0);
+            background: rgba(79, 106, 240, 0.09);
+            padding: 3px 12px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .exp-divider {
+            height: 1px;
+            background: rgba(79, 106, 240, 0.12);
+            margin: 12px 0 14px;
+        }
+
+        .exp-bullets {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .exp-bullets li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 9px;
+            font-size: 0.93rem;
+            color: var(--text-color-2, #555);
+            line-height: 1.65;
+            text-align: left;
+        }
+
+        .exp-bullets li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: var(--first-color, #4f6af0);
+            font-size: 0.9rem;
+            top: 1px;
+        }
+
+        @media (max-width: 600px) {
+            .experience-timeline::before { left: 12px; }
+            .exp-card { margin-left: 38px; padding: 16px; }
+            .exp-card::before { left: -32px; }
+            .exp-meta { flex-direction: column; gap: 4px; }
+        }
+    </style>
 </head>
 
 <body>
@@ -38,7 +174,6 @@
                         <a href="#about" class="nav-link">About</a>
                         <div class="circle"></div>
                     </li>
-                    <!-- ✅ NEW: Experience nav link -->
                     <li class="nav_list">
                         <a href="#experience" class="nav-link">Experience</a>
                         <div class="circle"></div>
@@ -150,40 +285,66 @@
                 </div>
             </section>
 
-            <!-- ✅ NEW: EXPERIENCE SECTION — added between About and Projects -->
+            <!-- ===== EXPERIENCE SECTION ===== -->
             <section class="section" id="experience">
                 <div class="top-header">
                     <h1>Experience</h1>
                 </div>
-                <div class="row">
-                    <div class="col">
 
-                        <div class="about-info">
-                            <h3>MIS Executive</h3>
-                            <p><strong>Nakul Clothing Mill</strong> &nbsp;|&nbsp; Tirupur, Tamil Nadu &nbsp;|&nbsp; 2023 – 2024</p>
-                            <p>Managed end-to-end MIS reporting and built Power BI dashboards to track production and operational KPIs. Automated Excel workflows using Macros and Power Query, reducing manual data processing time. Performed data validation and variance analysis to support accurate management reporting across departments.</p>
+                <div class="experience-timeline">
+
+                    <!-- Card 1: MIS Executive -->
+                    <div class="exp-card">
+                        <h3 class="exp-role">MIS Executive</h3>
+                        <div class="exp-meta">
+                            <span class="exp-company"><i class="uil uil-building"></i> Nakul Clothing Mill</span>
+                            <span class="exp-location"><i class="uil uil-map-marker"></i> <strong>Tirupur, Tamil Nadu</strong></span>
+                            <span class="exp-duration"><i class="uil uil-calendar-alt"></i> <strong>2023 – 2024</strong></span>
                         </div>
-
-                        <br>
-
-                        <div class="about-info">
-                            <h3>Data Analytics Intern</h3>
-                            <p><strong>One Data Software Solution Pvt Ltd</strong> &nbsp;|&nbsp; Coimbatore, Tamil Nadu &nbsp;|&nbsp; 2023</p>
-                            <p>Analyzed 20,000+ records using SQL and Advanced Excel to identify business trends and performance patterns. Created interactive Tableau and Power BI dashboards for client reporting. Supported data cleaning, transformation, and documentation of data pipelines.</p>
-                        </div>
-
-                        <br>
-
-                        <div class="about-info">
-                            <h3>Financial Analyst Intern</h3>
-                            <p><strong>Motilal Oswal Financial Services</strong> &nbsp;|&nbsp; India &nbsp;|&nbsp; 2022</p>
-                            <p>Conducted equity research and financial data analysis on large-cap companies listed on the NSE. Prepared investment reports and market trend summaries for senior analysts. Used Advanced Excel for financial modeling, data visualization, and performance tracking.</p>
-                        </div>
-
+                        <div class="exp-divider"></div>
+                        <ul class="exp-bullets">
+                            <li>Managed end-to-end MIS reporting and maintained large-scale data across departments</li>
+                            <li>Built Power BI dashboards to track production and operational KPIs for management decision-making</li>
+                            <li>Automated Excel workflows using Macros and Power Query, reducing manual data processing time significantly</li>
+                            <li>Performed data validation and variance analysis to ensure accuracy of management reports</li>
+                        </ul>
                     </div>
+
+                    <!-- Card 2: Data Analytics Intern -->
+                    <div class="exp-card">
+                        <h3 class="exp-role">Data Analytics Intern</h3>
+                        <div class="exp-meta">
+                            <span class="exp-company"><i class="uil uil-building"></i> One Data Software Solution Pvt Ltd</span>
+                            <span class="exp-location"><i class="uil uil-map-marker"></i> <strong>Coimbatore, Tamil Nadu</strong></span>
+                            <span class="exp-duration"><i class="uil uil-calendar-alt"></i> <strong>2023</strong></span>
+                        </div>
+                        <div class="exp-divider"></div>
+                        <ul class="exp-bullets">
+                            <li>Analyzed 20,000+ records using SQL and Advanced Excel to uncover business trends and performance patterns</li>
+                            <li>Created interactive Tableau and Power BI dashboards for client reporting and decision-making</li>
+                            <li>Supported data cleaning, transformation, and documentation of data pipelines</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 3: Financial Analyst Intern -->
+                    <div class="exp-card">
+                        <h3 class="exp-role">Financial Analyst Intern</h3>
+                        <div class="exp-meta">
+                            <span class="exp-company"><i class="uil uil-building"></i> Motilal Oswal Financial Services</span>
+                            <span class="exp-location"><i class="uil uil-map-marker"></i> <strong>India</strong></span>
+                            <span class="exp-duration"><i class="uil uil-calendar-alt"></i> <strong>2022</strong></span>
+                        </div>
+                        <div class="exp-divider"></div>
+                        <ul class="exp-bullets">
+                            <li>Conducted equity research and financial data analysis on large-cap companies listed on the NSE</li>
+                            <li>Prepared investment reports and market trend summaries for senior analysts</li>
+                            <li>Used Advanced Excel for financial modeling, data visualization, and performance tracking</li>
+                        </ul>
+                    </div>
+
                 </div>
             </section>
-            <!-- ✅ END OF EXPERIENCE SECTION -->
+            <!-- ===== END EXPERIENCE SECTION ===== -->
 
             <!-- -------------- PROJECT BOX ---------------- -->
             <section class="section" id="projects">
@@ -262,22 +423,11 @@
             </div>
             <div class="middle-footer">
                 <ul class="footer-menu">
-                    <li class="footer_menu_list">
-                        <a href="#home">Home</a>
-                    </li>
-                    <li class="footer_menu_list">
-                        <a href="#about">About</a>
-                    </li>
-                    <!-- ✅ NEW: Experience footer link -->
-                    <li class="footer_menu_list">
-                        <a href="#experience">Experience</a>
-                    </li>
-                    <li class="footer_menu_list">
-                        <a href="#projects">Projects</a>
-                    </li>
-                    <li class="footer_menu_list">
-                        <a href="#contact">Contact</a>
-                    </li>
+                    <li class="footer_menu_list"><a href="#home">Home</a></li>
+                    <li class="footer_menu_list"><a href="#about">About</a></li>
+                    <li class="footer_menu_list"><a href="#experience">Experience</a></li>
+                    <li class="footer_menu_list"><a href="#projects">Projects</a></li>
+                    <li class="footer_menu_list"><a href="#contact">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-social-icons">
@@ -303,10 +453,8 @@
 
     <!-- ----- TYPING JS Link ----- -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
     <!-- ----- SCROLL REVEAL JS Link----- -->
     <script src="https://unpkg.com/scrollreveal"></script>
-
     <!-- ----- MAIN JS ----- -->
     <script src="js/Portfolio.js"></script>
 </body>
