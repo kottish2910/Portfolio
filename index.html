@@ -14,7 +14,6 @@
     <!-- Boxicon -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-
     <!-- --------- FAVICON ---------- -->
     <link rel="shortcut icon" href="portfolio.png" type="image/x-icon">
 
@@ -39,6 +38,11 @@
                         <a href="#about" class="nav-link">About</a>
                         <div class="circle"></div>
                     </li>
+                    <!-- ✅ NEW: Experience nav link -->
+                    <li class="nav_list">
+                        <a href="#experience" class="nav-link">Experience</a>
+                        <div class="circle"></div>
+                    </li>
                     <li class="nav_list">
                         <a href="#projects" class="nav-link">Projects</a>
                         <div class="circle"></div>
@@ -57,9 +61,9 @@
             </div>
         </nav>
 
-
         <!-- -------------- MAIN ---------------- -->
         <main class="wrapper">
+
             <!-- -------------- FEATURED BOX ---------------- -->
             <section class="featured-box" id="home">
                 <div class="featured-text">
@@ -70,15 +74,14 @@
                         <p>I'm <span class="typedText"></span></p>
                     </div>
                     <div class="featured-text-info">
-                        <p>Aspiring Business Analyst and Data Analyst with a passion for transforming data into actionable insights and driving data-driven decision-making.
-                            </p>
+                        <p>Aspiring Business Analyst and Data Analyst with a passion for transforming data into actionable insights and driving data-driven decision-making.</p>
                     </div>
                     <div class="featured-text-btn">
-                        <button class="btn blue-btn" id="HireMe" onclick="HireMe()">Hire Me</a></button>
+                        <button class="btn blue-btn" id="HireMe" onclick="HireMe()">Hire Me</button>
                         <button class="btn" onclick="downloadCV()">Download CV <i class="uil uil-file-alt"></i></button>
                     </div>
                     <div class="social_icons">
-                        <div class="icon" id="socialmedia" onclick="redirectTo('https://www.instagram.com/kottish29/','_blank')"><i class="bx bxl-instagram"></i></a></div>
+                        <div class="icon" id="socialmedia" onclick="redirectTo('https://www.instagram.com/kottish29/','_blank')"><i class="bx bxl-instagram"></i></div>
                         <div class="icon" id="socialmedia" onclick="redirectTo('https://linkedin.com/in/kottishwaran-arjunan','_blank')"><i class="bx bxl-linkedin"></i></div>
                         <div class="icon" id="socialmedia" onclick="sendMail()"><i class='bx bxl-gmail'></i></div>
                         <div class="icon" id="socialmedia" onclick="redirectTo('https://github.com/kottish2910','_blank')"><i class="bx bxl-github"></i></div>
@@ -86,7 +89,7 @@
                 </div>
                 <div class="featured-image">
                     <div class="image">
-                        <img src="assets/Image-removebg-preview.png" alt="avatar">     <!--------------------- My Image------------------>
+                        <img src="assets/Image-removebg-preview.png" alt="avatar">
                     </div>
                 </div>
                 <div class="scroll-icon-box">
@@ -95,8 +98,8 @@
                         <p>Scroll Down</p>
                     </a>
                 </div>
-
             </section>
+
             <!-- -------------- ABOUT BOX ---------------- -->
             <section class="section" id="about">
                 <div class="top-header">
@@ -106,10 +109,9 @@
                     <div class="col">
                         <div class="about-info">
                             <h3>My introduction</h3>
-                            <p>Data Analyst with hands-on experience in Power BI, SQL, Excel, and Tableau. Skilled in building interactive dashboards, automating data workflows, and deriving actionable insights from large datasets. Proficient in storytelling with data, quick to learn new tools, and a proactive team player committed to delivering high-impact business solutions and driving decision-making.
-                                 </p>
+                            <p>Data Analyst with hands-on experience in Power BI, SQL, Excel, and Tableau. Skilled in building interactive dashboards, automating data workflows, and deriving actionable insights from large datasets. Proficient in storytelling with data, quick to learn new tools, and a proactive team player committed to delivering high-impact business solutions and driving decision-making.</p>
                             <div class="about-btn">
-                                <button class="btn"  onclick="downloadCV()">Download CV <i class="uil uil-import"></i></button>
+                                <button class="btn" onclick="downloadCV()">Download CV <i class="uil uil-import"></i></button>
                             </div>
                         </div>
                     </div>
@@ -120,18 +122,17 @@
                             </div>
                             <div class="skills-list">
                                 <span>POWER BI</span>
-                                <span>TABLE AU</span>
+                                <span>TABLEAU</span>
                                 <span>ADVANCED EXCEL</span>
                                 <span>MySQL</span>
-
                             </div>
                         </div>
                         <div class="skills-box">
                             <div class="skills-header">
-                                <h3>BUSINESS ANALYST </h3>
+                                <h3>BUSINESS ANALYST</h3>
                             </div>
                             <div class="skills-list">
-                                <span>POROJECT MANAGEMENT</span>
+                                <span>PROJECT MANAGEMENT</span>
                                 <span>JIRA</span>
                                 <span>AGILE</span>
                             </div>
@@ -149,52 +150,79 @@
                 </div>
             </section>
 
+            <!-- ✅ NEW: EXPERIENCE SECTION — added between About and Projects -->
+            <section class="section" id="experience">
+                <div class="top-header">
+                    <h1>Experience</h1>
+                </div>
+                <div class="row">
+                    <div class="col">
+
+                        <div class="about-info">
+                            <h3>MIS Executive</h3>
+                            <p><strong>Nakul Clothing Mill</strong> &nbsp;|&nbsp; Tirupur, Tamil Nadu &nbsp;|&nbsp; 2023 – 2024</p>
+                            <p>Managed end-to-end MIS reporting and built Power BI dashboards to track production and operational KPIs. Automated Excel workflows using Macros and Power Query, reducing manual data processing time. Performed data validation and variance analysis to support accurate management reporting across departments.</p>
+                        </div>
+
+                        <br>
+
+                        <div class="about-info">
+                            <h3>Data Analytics Intern</h3>
+                            <p><strong>One Data Software Solution Pvt Ltd</strong> &nbsp;|&nbsp; Coimbatore, Tamil Nadu &nbsp;|&nbsp; 2023</p>
+                            <p>Analyzed 20,000+ records using SQL and Advanced Excel to identify business trends and performance patterns. Created interactive Tableau and Power BI dashboards for client reporting. Supported data cleaning, transformation, and documentation of data pipelines.</p>
+                        </div>
+
+                        <br>
+
+                        <div class="about-info">
+                            <h3>Financial Analyst Intern</h3>
+                            <p><strong>Motilal Oswal Financial Services</strong> &nbsp;|&nbsp; India &nbsp;|&nbsp; 2022</p>
+                            <p>Conducted equity research and financial data analysis on large-cap companies listed on the NSE. Prepared investment reports and market trend summaries for senior analysts. Used Advanced Excel for financial modeling, data visualization, and performance tracking.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- ✅ END OF EXPERIENCE SECTION -->
+
             <!-- -------------- PROJECT BOX ---------------- -->
             <section class="section" id="projects">
                 <div class="top-header">
-                  <h1>Projects</h1>
+                    <h1>Projects</h1>
                 </div>
                 <div class="project-container">
-                  <div class="project-box-completed">
-                    <i class="uil uil-briefcase-alt"></i>
-                    <h3>Completed</h3>
-                    <label>2+ Finished Projects</label>
-                    <div class="project-dropdown" onclick="toggleSection('completed')">
-                      <i class='bx bxs-chevron-down'></i>
+                    <div class="project-box-completed">
+                        <i class="uil uil-briefcase-alt"></i>
+                        <h3>Completed</h3>
+                        <label>2+ Finished Projects</label>
+                        <div class="project-dropdown" onclick="toggleSection('completed')">
+                            <i class='bx bxs-chevron-down'></i>
+                        </div>
+                        <div class="project-details">
+                            <a rel="noopener" href="https://github.com/kottish2910/A-study-on-large-market-cap-companies-in-NSE" target="_blank">A-study-on-large-market-cap-companies-in-NSE</a>
+                            <a href="" target="_blank">Advance Analytics</a>
+                            <a href="" target="_blank">Portfolio</a>
+                        </div>
                     </div>
-                    <div class="project-details">
-                      <a rel="noopener" href=https://github.com/kottish2910/A study on large market cap companies in NSE" target="_blank">A-study-on-large-market-cap-companies-in-NSE</a>
-                      <a href="" target="_blank">Advance Analytics</a>
-                      <a href="" target="_blank">Portfolio</a>
+
+                    <div class="project-box-certifications">
+                        <i class="uil uil-users-alt"></i>
+                        <h3>Certifications</h3>
+                        <label>4+ Certifications</label>
+                        <div class="project-dropdown" onclick="toggleSection('certifications')">
+                            <i class='bx bxs-chevron-down'></i>
+                        </div>
+                        <div class="project-details">
+                            <a rel="noopener" href="https://drive.google.com/file/d/1vVHDZpdfp_aKKg1o-rZfe5C343g47eRR/view?usp=drive_link" target="_blank">Data Analytics and Visualization - Accenture</a>
+                            <a rel="noopener" href="https://drive.google.com/file/d/1v-W77cgtuXKjWQi7wHHbbpp4xsxEJaml/view?usp=drive_link" target="_blank">Data Visualization: Empowering Business with Effective Insights - TCS</a>
+                            <a rel="noopener" href="https://drive.google.com/file/d/1oa5dCDjP_lHMbt_pDUUI33dsDJBZMetD/view?usp=drive_link" target="_blank">Data Analysis - One Data Software Solutions Pvt Ltd</a>
+                            <a rel="noopener" href="https://www.guvi.in/share-certificate/7JO1g30r06916bma4p" target="_blank">MySQL - GUVI</a>
+                        </div>
                     </div>
-                  </div>
-              
-                  <div class="project-box-certifications">
-                    <i class="uil uil-users-alt"></i>
-                    <h3>Certifications</h3>
-                    <label>4+ Certifications</label>
-                    <div class="project-dropdown" onclick="toggleSection('certifications')">
-                      <i class='bx bxs-chevron-down'></i>
-                    </div>
-                    <div class="project-details">
-                      <a  rel="noopener"href="https://drive.google.com/file/d/1vVHDZpdfp_aKKg1o-rZfe5C343g47eRR/view?usp=drive_link" target="_blank">Data Analytics and Visualization - Accenture</a>
-
-                      <a rel="noopener" href="https://drive.google.com/file/d/1v-W77cgtuXKjWQi7wHHbbpp4xsxEJaml/view?usp=drive_link" target="_blank">Data Visualization: Empowering business with effictive insights - TCS</a>
-
-                      <a rel="noopener"href="https://drive.google.com/file/d/1oa5dCDjP_lHMbt_pDUUI33dsDJBZMetD/view?usp=drive_link" target="_blank">Data Analysis - One data software solutions pvt ltd</a>
-
-                      <a rel="noopener" href="https://www.guvi.in/share-certificate/7JO1g30r06916bma4p" target="_blank">My SQL - guvi</a>
-
-                    </div>
-                  </div>
                 </div>
-              </section>
-              
-              
-              
-            
-            <!-- -------------- CONTACT BOX ---------------- -->
+            </section>
 
+            <!-- -------------- CONTACT BOX ---------------- -->
             <section class="section" id="contact">
                 <div class="top-header">
                     <h1>Get in touch</h1>
@@ -205,7 +233,7 @@
                         <div class="contact-info">
                             <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
                             <p><i class="uil uil-envelope"></i> Email : kottishwaran861@gmail.com</p>
-                            <p><i class="uil uil-phone"></i> Tel:+91 86103-61919</p>
+                            <p><i class="uil uil-phone"></i> Tel: +91 86103-61919</p>
                         </div>
                     </div>
                     <div class="col">
@@ -227,7 +255,6 @@
 
         </main>
 
-
         <!-- --------------- FOOTER --------------- -->
         <footer>
             <div class="top-footer">
@@ -241,6 +268,10 @@
                     <li class="footer_menu_list">
                         <a href="#about">About</a>
                     </li>
+                    <!-- ✅ NEW: Experience footer link -->
+                    <li class="footer_menu_list">
+                        <a href="#experience">Experience</a>
+                    </li>
                     <li class="footer_menu_list">
                         <a href="#projects">Projects</a>
                     </li>
@@ -250,7 +281,7 @@
                 </ul>
             </div>
             <div class="footer-social-icons">
-                <div class="icon" id="application" onclick="redirectTo('https://https://www.instagram.com/kottish29/','_blank')">
+                <div class="icon" onclick="redirectTo('https://www.instagram.com/kottish29/','_blank')">
                     <i class="bx bxl-instagram"></i>
                 </div>
                 <div class="icon" onclick="redirectTo('https://linkedin.com/in/kottishwaran-arjunan','_blank')">
@@ -262,18 +293,13 @@
                 <div class="icon" onclick="redirectTo('https://github.com/kottish2910','_blank')">
                     <i class="bx bxl-github"></i>
                 </div>
-                
             </div>
             <div class="bottom-footer">
-                <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Kottishwaran</a> - All rights reserved
-                </p>
+                <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Kottishwaran</a> - All rights reserved</p>
             </div>
         </footer>
 
     </div>
-
-
-
 
     <!-- ----- TYPING JS Link ----- -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
